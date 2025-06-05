@@ -1,5 +1,13 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import {
+  IonContent,
+  IonHeader,
+  IonPage,
+  IonTitle,
+  IonToolbar,
+  IonImg,
+  IonItem,
+  IonLabel
+} from '@ionic/react';
 import './Tab1.css';
 
 const Tab1: React.FC = () => {
@@ -7,16 +15,40 @@ const Tab1: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 1</IonTitle>
+          <IonTitle>Página Inicial</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 1</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer name="Tab 1 page" />
+      <IonContent fullscreen className="ion-padding">
+        <IonItem lines="none">
+          <IonImg
+            src="/assets/fotofoto.jpg"
+            style={{ width: '100px', height: '100px', borderRadius: '8px' }}
+          />
+        </IonItem>
+        <IonItem>
+          <IonLabel>
+            <h2>Nombre:</h2>
+            <p>Cristian</p>
+          </IonLabel>
+        </IonItem>
+        <IonItem>
+          <IonLabel>
+            <h2>Apellido:</h2>
+            <p>Ledesma</p>
+          </IonLabel>
+        </IonItem>
+        <IonItem>
+          <IonLabel>
+            <h2>Matricula:</h2>
+            <p>2023-0967</p>
+          </IonLabel>
+        </IonItem>
+        <IonItem>
+          <IonLabel>
+            <h2>Correo:</h2>
+            <p>20230967@itla.edu.do</p>
+          </IonLabel>
+        </IonItem>
       </IonContent>
     </IonPage>
   );
