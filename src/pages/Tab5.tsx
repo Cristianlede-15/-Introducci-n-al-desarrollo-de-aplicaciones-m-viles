@@ -19,7 +19,7 @@ const Tab5: React.FC = () => {
       <IonContent fullscreen className="ion-padding">
         <div className="video-container">
           <iframe
-            src="https://www.youtube.com/embed/tYcUUuoKV50"
+            src="https://www.youtube.com/embed/ooZVHBFt38g"
             title="Video de Experiencia"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
